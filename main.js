@@ -2,42 +2,56 @@
 
 var ref = new Firebase('https://seahawk-watcher.firebaseio.com/');
 var answerRef = ref.child('answer');
-var $post;
-// var $template;
-var answerList;
+var $post, $template, name, answer, answerList;
 
-$(document).ready(function(e) {
-  // e.preventDefault();
+
+$(document).ready(function() {
   $('#post').on('click', createPost);
+  // $('#modaly').on('click', '#addPost', addContent )
+  // $('#getModal').on('click', grabInfo);
 });
 
-function createPost() {
-  console.log('working');
-  answerRef.push({
+//create each post after click
+function createPost(e) {
+  e.preventDefault();
+  // console.log('working');
+  var post = {
     name: $('#addUsername').val(),
     answer: $('#addAnswer').val()
-  });
+  };
+  answerRef.push(post);
   $('#addUsername').val('');
   $('#addAnswer').val('');
 }
 
-answerRef.on('child_added', function(snapshot) {
+//get new post info
+// function grabInfo() {
+//   var answerList = $('#answerList').val();
+//   var postObject = {
+//
+//   }
+// }
+
+function showPost() {
+answerRef.on('value', function(snapshot) {
   console.log(snapshot.val());
   var $rows = [];
-  snapshot.forEach(function(answerSnap) {
-    var key = answerSnap.key();
+  snapshot.forEach(function(childSnap) {
+    var answer = childSnap.val();
+    var thisKey = snapshot.key();
+    postRef.child(thisKey);
 
-    var comment = $('div').attr('id', key);
-    console.log(comment);
     // console.log(answer);
-    // var $template = $('#template');
-    // var $tr = $template.clone();
-    // // $.remove('id');
-    // $tr.children('.name').text(post.name);
-    // $tr.children('.answer').text(post.answer);
-    //$('#postAnswer1').text(post.name).attr(key);
-    //$('#postAnswer2').text(post.answer).attr(key);
+    var $template = $('#template');
+    var $answerList = $template.clone();
+    $answerList.removeAttr('id');
+    $answerList.attr("this_id", key);
+    $answerList.children('.name').text(post.name);
+    $answerList.children('.answer').text(post.answer);
+    rows.push($answerList);
 
-    // $row.append($tr);
+
+    $row.append(rows);
+    });
   });
-})
+}
