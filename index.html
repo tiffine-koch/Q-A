@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q&A</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+  <div class="page-header">
+  <h1>Ask a Single Person    <small id="small">get relationship advice from single people</small></h1>
+  </div>
+
+<div class="table">
+  <table class="table">
+  <thead class="tHeader">
+    <tr>
+      <th class="question">Question</th>
+      <th class="date">Date</th>
+      <th>Read Answers + Add Your Own</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+  <tbody id="questionList">
+    <tr>
+      <td class="title">Have dating apps helped or hurt us when it comes to relationships?</td>
+      <td class="date">January 18, 2016</td>
+      <td class="modalTime">
+      <button type="button" class="push btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Your 2 Cents</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="exampleModalLabel">Answers</h4>
+              <section class="content">Meditation shoreditch humblebrag butcher sriracha, schlitz truffaut ramps synth kombucha keffiyeh meggings typewriter austin keytar. Tofu jean shorts ramps next level, vinyl green juice yr cray chambray butcher kale chips gastropub godard gentrify.</section>
+              <p class="postAnswer1"></p>
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="control-label">Username:</label>
+                  <input type="text" class="form-control" id="addUsername">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="control-label">Your Answer:</label>
+                  <textarea class="form-control" id="addAnswer"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <img src="feelings.jpg" alt="">
+              <button id="post" type="button" class="btn btn-warning">Add Answer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </td>
+      <td>
+        <button type="button" class="btn btn-default" id="trash">
+          <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </td>
+     </tr>
+
+    <tr>
+      <td class="title">When is the best age to get married?</td>
+      <td class="date">January 11, 2016</td>
+      <td class="modalTime">
+      <button type="button" class="push btn btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Your 2 Cents</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="exampleModalLabel">Answers</h4>
+              <section class="content">Meditation shoreditch humblebrag butcher sriracha, schlitz truffaut ramps synth kombucha keffiyeh meggings typewriter austin keytar. Tofu jean shorts ramps next level, vinyl green juice yr cray chambray butcher kale chips gastropub godard gentrify.</section>
+              <p class="postAnswer1"></p>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="control-label">Username:</label>
+                  <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="control-label">Your Answer:</label>
+                  <textarea class="form-control" id="addAnswer"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <img src="feelings.jpg" alt="">
+              <button type="button" class="btn btn-warning" id="comment">Add Answer</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      </td>
+      <td>
+        <button type="button" class="btn btn-default" id="trash">
+          <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </td>
+     </tr>
+  </table>
+</tbody>
+</div>
+<div class="row">
+<img src="pink.jpg" alt=""><img src="love.jpg" alt="">
+</div>
+</div>
+<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

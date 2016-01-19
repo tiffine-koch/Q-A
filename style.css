@@ -1,0 +1,105 @@
+#template {
+  display: none;
+}
+
+.row {
+  text-align: center;
+}
+img {
+  text-align: center;
+  border: 5px white solid;
+  /*width: 200px;
+  height: 300px;*/
+}
+
+#small {
+  font-size: 16px;
+}
+#container {
+  width: 90%;
+  margin: auto;
+}
+body{
+  background-color: #E2E4F3;
+}
+
+.table {
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+  /*margin-bottom: 40px;*/
+}
+h1 {
+  color: ;
+  font-size: 38px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  font-family: arial;
+  font-style: italic;
+  font-weight: bold;
+}
+#topButtons {
+  margin-bottom: 40px;
+}
+th {
+  color: #000;
+  font-style: italic;
+  font-size: 16px;
+}
+
+th:hover {
+  color: red;
+}
+
+#formEntry {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  font-size: 16px;
+}
+
+label{
+  font-size: 16px;
+  color: red;
+}
+
+#newEntry {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  color: #000;
+  font-size: 16px;
+}
+
+.favWith {
+  color: red;
+  font-weight: bold;
+}
+#trash {
+  margin-left: 20px;
+}
+#template {
+     display:none;
+}
+
+#buttonFilter {
+  margin-left: 700px;
+  margin-bottom: 20px;
+}
+
+#buttonSort {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#heart {
+  color: red;
+}
+
+.push {
+  text-align: center;
+}
